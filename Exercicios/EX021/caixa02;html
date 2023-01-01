@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+body{
+    font-family: sans-serif;
+    background-color: blue;
+
+}
+
+nav{
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    box-shadow: 1px 1px 1px 1px black;
+    font-display: none;
+}
+
+a{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+}
+section{
+
+
+}
+header{
+    width: auto;
+    background-color: royalblue;
+    color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+}
+main{
+    background: rgba(0, 255, 247, 0.676);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0px 20px;
+    box-shadow: 2px 2px 2px 2px black;
+
+}
+
+section{
+
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+div#bola{
+    width: 100px;
+    height: 100px;
+    margin:auto;
+    background-color: aquamarine;
+    border-radius: 50px 50px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id='Assunto'>
+            <p>Esportes</p>
+
+        </section>
+        <section id='Noticias'>
+            <article>
+                <h2>Esportes no Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Soluta quidem ea facilis minima maxime, nam ducimus 
+                rerum consequuntur quas, et repudiandae reiciendis vitae 
+                obcaecati beatae maiores. Impedit dolorum vero reprehenderit!</p>
+            </article>
+            <aside>
+                <p>Artigo escrito por José da Silva</p>
+            </aside>
+        </section>
+    
+
+    </main>
+    <footer>
+        <p>Curso desenvolvido pelo Curso em Video</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

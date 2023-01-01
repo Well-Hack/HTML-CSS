@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(105, 240, 105);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+h1#principal{
+
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.basico {
+    color: green;
+
+}
+
+.intermediario {
+    color: yellow;
+
+}
+
+.avancado {
+    color: red;
+
+}
+
+.destaque {
+        background-color: yellow;
+
+}
