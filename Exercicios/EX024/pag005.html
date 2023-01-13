@@ -7,12 +7,13 @@
     <title>Frames</title>
 </head>
 <body>
-    <a href="#" onclick="clicou"> Clique em mim</a>
+    <a href="#" onclick="clicou()"> Clique em mim</a>
     <div id="saida"></div>
 
     <script>
-        function clicou(){
-            s = window.document.getElementById
+        function clicou() {
+            s = window.document.getElementById("saida")
+            s.innerHTML += "<p>Você clicou</p>"
         }
 
     </script>
