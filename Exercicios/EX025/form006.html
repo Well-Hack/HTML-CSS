@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario checkbox e radio</title>
+</head>
+<body>
+    <h1>Formulario checkbox e radio</h1>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="Cadastro.py" method="post">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" maxlength="30" size="30">
+            </p>
+            <p>
+                <label for="iidade">Idade:</label>
+                <input type="year" name="idade" id="iidade" maxlength="3" size="3">
+            </p>
+                <label for="icidade"> Cidade:</label>
+                <input type="text" name="cidade" id="icidade" maxlength="50" size="50">
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Esportes</legend>
+        <p>
+            <input type="checkbox" name="esfut" id="iesfut"> Futebol
+            <input type="checkbox" name="esbas" id="iesbas"> Basquete
+            <input type="checkbox" name="esvolei" id="ievolei"> Voleibol
+            <input type="checkbox" name="esten" id="iesten"> Tenis
+            <input type="checkbox" name="esxad" id="iesxad"> Xadrez
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </fieldset>
+    
+</body>
+</html>
