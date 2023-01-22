@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+
+/*Modo landscape*/
+
+
+body {
+
+    background-color: orange;
+    background-image: url(../Imagens/cev-landscape.jpg);
+    background-position: left top;
+
+}
