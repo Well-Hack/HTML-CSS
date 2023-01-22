@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 007 </title>
+</head>
+<body>
+    <p>Formulario</p>
+    <form action="Cadastro.py"> 
+        <p>
+            <label for="iest" autocomplete="off">Estado:</label>
+            <select name="estado" id="iestado">
+            <option value="SP" selected>São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="ES">Espirito Santo</option>
+            </select>
+        </p>
+        <p>
+            <label for="iprofis">Profissão</label>
+            <input type="text" name="prof" id="iprofis" list="lsprof">
+            <datalist id="lsprof">
+                <option value="CON">Contador</option>
+                <option value="PRO">Professor</option>
+                <option value="DES">Desenvolvedor</option>
+                <option value="ARQ">Arquiteto</option>
+                <option value="POL">Policial</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
