@@ -25,6 +25,16 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar DOM em Javascript</p>
-    <div> Clique em mim</div>
+    <div id="msg"> Clique em mim</div>
+
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName ('p')[0]
+        var b = document.getElementById ('msg')
+        b.style.background = 'green'
+        //
+        var g = document.querySelector('div#msg')
+        g.style.color = 'red'
+    </script>
 </body>
 </html>
