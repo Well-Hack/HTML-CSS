@@ -79,12 +79,12 @@
         var data = new Date();
         var ano = data.getFullYear();
         var fano = document.getElementById("txtano");
-        var res = document.getElementById('res');
+        var res = document.getElementById("res")
 
         if (fano.value.length == 0 || fano.value > ano){
             window.alert("Verifique os dados e tente novamente!")
             }else{
-                var fsex = document.getElementsByName=('radsex')[0]
+                var fsex = document.getElementsByName('radsex')
                 var idade = ano - Number(fano.value)
                 var gen = ""
                 if(fsex[0].checked){
@@ -92,6 +92,7 @@
                 }else if(fsex[1].checked){
                     gen = "Mulher"
                 }
+            res.innerHTML =`Você tem ${idade} e o seu genero é ${gen}`
             }       
         }
     </script>
