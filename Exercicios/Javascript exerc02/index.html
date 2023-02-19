@@ -67,7 +67,6 @@
         </div>
         <div id="res">
             <p>Preencha os dados acima para verificar os resultados</p>
-            <img src="menino8anos.jpg" id="img">
         </div>
     </section>
     <footer>
@@ -86,35 +85,35 @@
             }else{
                 var fsex = document.getElementsByName('radsex')
                 var idade = ano - Number(fano.value)
-                var gen = ""
-                var img = document.getElementById("img")
+                var gen = ''
+                var img = document.createElement('img')
+                img.setAttribute('id','foto')
                 if(fsex[0].checked){
-                    gen = "Homem"
-                    if(idade >= 0 && idade < 10){
-                        img.src= "menino8anos.jpg"
-                    }else if(idade >= 10 && idade < 21){
-                        img.src= "menino21anos.jpg"
-                    }else if(idade >= 21 && idade < 60){
-                        img.src="homemadulto.png"
-                    }else{
-                        img.src = "idosohomem.jpg"
+                    gen = 'Homem'
+                    if (idade >= 0 && idade < 10){
+                    //crianca
+                    }else if(idade < 21){
+                    //jovem
+                    }else if(idade < 50){
+                    //adulto
+                    } else {
+                    //idoso
                     }
                 }else if(fsex[1].checked){
-                    gen = "Mulher"
-                    if(idade >= 0 && idade <10){
-
-                    }else if(idade >= 10 && idade <21){
-
-                    }else if(idade >= 21 && idade < 60){
-
-                    }else{ 
-
+                    gen = 'Mulher'
+                    if (idade >= 0 && idade < 10){
+                    //crianca
+                    }else if(idade < 21){
+                    //jovem
+                    }else if(idade < 50){
+                    //adulto
+                    } else {
+                    //idoso
                     }
                 }
-            res.style.textAlign = "center"
-            res.innerHTML =`Você tem ${idade} e o seu genero é ${gen}`
-            img.appendChild(img)
-            }       
+                res.style.textAlign = 'center' 
+                res.innerHTML = `Detectamos que voce tem ${idade} e você é ${gen}`
+            }
         }
     </script>
 </body>
