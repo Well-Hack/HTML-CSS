@@ -92,27 +92,36 @@
                     gen = 'Homem'
                     if (idade >= 0 && idade < 10){
                     //crianca
+                    img.setAttribute('src', 'menino8anos.jpg')
                     }else if(idade < 21){
                     //jovem
+                    img.setAttribute('src', 'menino15anos.jpg')
                     }else if(idade < 50){
                     //adulto
+                    img.setAttribute('src', 'homemadulto.png')
                     } else {
                     //idoso
+                    img.setAttribute('src', 'idosohomem.jpg')
                     }
                 }else if(fsex[1].checked){
                     gen = 'Mulher'
                     if (idade >= 0 && idade < 10){
                     //crianca
+                    img.setAttribute('src', 'menina8anos.jpg')
                     }else if(idade < 21){
                     //jovem
+                    img.setAttribute('src', 'menina15anos.jpg')
                     }else if(idade < 50){
                     //adulto
+                    img.setAttribute('src', 'mulheradulta.jpg')
                     } else {
                     //idoso
+                    img.setAttribute('src', 'mulheridosa.jpg')
                     }
                 }
                 res.style.textAlign = 'center' 
                 res.innerHTML = `Detectamos que voce tem ${idade} e você é ${gen}`
+                res.appendChild(img)
             }
         }
     </script>
