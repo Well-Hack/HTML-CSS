@@ -12,12 +12,17 @@
 
     <div class="tab">
         <p><strong>Como funciona:</strong> Você digita um número no campo abaixo,<br>
-        que sera gerado uma tabuada referente aquele numero até 20</p>
-        <label for="inum">Digite um numero qualquer:</label>
+        que sera gerado uma tabuada referente aquele numero até 20.</p><br>
+        <label for="inum">Digite um número qualquer:</label>
         <input type="number" name="numero" id="inum">
-        <input type="submit" value="verificar">
+        <input type="submit" value="verificar" onclick="calc()">
         <div id="res"></div>
     </div>
-    
+    <script>
+function calc(){
+    var n1 = document.getElementById("inum.value")
+    res.innerHTML=`Você digitou ${n1}`
+}
+    </script>
 </body>
 </html>
