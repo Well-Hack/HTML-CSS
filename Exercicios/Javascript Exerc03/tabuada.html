@@ -20,8 +20,16 @@
     </div>
     <script>
 function calc(){
-    var n1 = document.getElementById("inum.value")
-    res.innerHTML=`Você digitou ${n1}`
+    var n1 = document.getElementById("inum");
+    n1 = parseInt(n1.value);
+    n2 = 0
+    r1 = ''
+    res.innerHTML = ""
+    while(n2 <= 20){
+        r1 = n2 * n1 
+        res.innerHTML +=`${n1} x ${n2} = ${r1} </br>`
+        n2 ++
+    };
 }
     </script>
 </body>
