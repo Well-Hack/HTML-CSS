@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Idade</title>
+    <title>Contador</title>
     <style>
        *{
             padding: 0;
@@ -47,21 +47,49 @@
 </head>
 <body>
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>Contador</h1>
     </header>
     <section>
-        <div>
+        <div id="dados">
+            <p>inicio: <input type="number" name="inicio" id="ini"> </p>
+            <p>Fim:    <input type="number" name="fim" id="fim"></p>
+            <p>Passo: <input type="number" name="passo" id="pas"></p> 
+            <p><input type="submit" value="calcular" onclick="contar()"></p>       
         </div>
         <div id="res">
-    
+            <p>Preparando a contar</p>
         </div>
     </section>
     <footer>
         Treinamento Wellerson Ferreira
     </footer>
+     <script>
+        function contar(){
+            let inicio = document.getElementById('ini')
+            let fim = document.getElementById('fim')
+            let passo = document.getElementById('pas')
+            let res = document.getElementById('res')
 
-    <script>
-
+            if(inicio.value.length == 0 || fim.value.length == 0 || pas.value.length == 0){
+                window.alert('erros faltam os dados!')
+            } else{
+                res.innerHTML='Contando...'
+                let i = Number(ini.value)
+                let f = Number(fim.value)
+                let p = Number(passo.value)
+                if (i < f){
+                    for(let c = i; c <= f; c += p){
+                        res.innerHTML += ` ${c} \u{1F463}`}
+                } else{
+                    for(let c = i; c >= f; c -= p){
+                        res.innerHTML += `${c} \u{1F463}`
+                    }
+                }
+            }
+            res.innerHTML += `\u{1F3C1}`
+            
+        }
+            
   
     </script>
 </body>
