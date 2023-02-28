@@ -78,16 +78,18 @@
                 let f = Number(fim.value)
                 let p = Number(passo.value)
                 if (i < f){
+                    //contagem progressiva
                     for(let c = i; c <= f; c += p){
-                        res.innerHTML += ` ${c} \u{1F463}`}
+                        res.innerHTML += ` ${c} \u{1F463}`
+                    }
                 } else{
+                    //contagem regressiva
                     for(let c = i; c >= f; c -= p){
                         res.innerHTML += `${c} \u{1F463}`
                     }
                 }
             }
-            res.innerHTML += `\u{1F3C1}`
-            
+            res.innerHTML += `\u{1F3C1}`            
         }
             
   
