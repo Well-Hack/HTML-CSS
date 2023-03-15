@@ -40,11 +40,21 @@ function end(){
         let tot = valor.length
         let mai = valor[0]
         let men = valor[0]
+        let soma = 0
+        let media = 0
         for(let pos in valor){
-            
+            if(valor[pos] > mai)
+                mai = valor[pos]
+            if(valor[pos] < men)
+                men = valor[pos]
+        soma += valor[pos]
+        media = soma / tot
         }
         
         res.innerHTML =  ``
-        res.innerHTML = `<p> Ao todo temos ${tot} números cadastrados. </p>`
+        res.innerHTML = `<p> Ao todo temos ${tot} números cadastrados.</p>`
+        res.innerHTML += `<p> O maior valor informado foi ${mai}</p>`
+        res.innerHTML += `<p> A soma dos valores foi ${soma}</p>`
+        res.innerHTML += `<p> A média de todos os valores foi ${media}</p>`
     }
 }
