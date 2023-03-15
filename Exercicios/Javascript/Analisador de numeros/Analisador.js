@@ -58,3 +58,4 @@ function end(){
         res.innerHTML += `<p> A média de todos os valores foi ${media}</p>`
     }
 }
+
